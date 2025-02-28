@@ -1,5 +1,6 @@
 #include "ui.h"
 #include "ui_helpers.h"
+#include <cstdio>  // Add this for snprintf
 
 // SCREENS
 lv_obj_t * ui_MainScreen;

@@ -3,8 +3,8 @@
 #include <TFT_eSPI.h>
 #include "ui/ui.h"
 
-// LVGL display buffer
-#define LVGL_BUFFER_SIZE (TFT_WIDTH * 40)
+// Display buffer size (adjust if needed)
+#define LVGL_BUFFER_SIZE (TFT_WIDTH * 20)
 
 // TFT instance
 TFT_eSPI tft = TFT_eSPI();
@@ -61,9 +61,9 @@ void setup()
     tft.setRotation(0); // Adjust based on your display orientation
     tft.fillScreen(TFT_BLACK);
 
-    // Initialize touch
-    uint16_t calData[5] = {208, 3858, 330, 3858, 1}; // Default calibration data, might need adjustment
-    tft.setTouch(calData);
+    // Initialize touch - use default calibration for now
+    // You might need to calibrate this for your specific screen
+    tft.setTouch(NULL);
 
     // Initialize LVGL
     lv_init();
