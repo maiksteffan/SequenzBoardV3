@@ -1,0 +1,7 @@
+.pio
+.vscode
+.idea
+CMakeLists.txt
+CMakeListsPrivate.txt
+*.log
+build/
